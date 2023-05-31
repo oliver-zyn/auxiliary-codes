@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-import { ContainerLinkButton } from "./styles";
-import { ReactNode } from "react";
+import { Link } from 'react-router-dom'
+import { ContainerLinkButton } from './styles'
+import { ReactNode } from 'react'
 
 type LinkButtonProps = {
-  text: string;
-  icon: ReactNode;
-  link: string;
-  target?: string;
+  text: string
+  icon: ReactNode
+  link: string
+  target?: string
 }
 
 export function LinkButton({ text, icon, link, target }: LinkButtonProps) {

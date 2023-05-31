@@ -1,10 +1,12 @@
 export const cardData = [
-    { 
-        id: '1',
-        title: 'Máximo Divisor', 
-        description: 'O maior divisor comum (MDC) é o maior número que divide dois ou mais números sem deixar resto. O MDC é obtido encontrando os fatores comuns aos números e selecionando o maior deles.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Maximo%20Divisor.h',
-        code: `
+  {
+    id: '1',
+    title: 'Máximo Divisor',
+    description:
+      'O maior divisor comum (MDC) é o maior número que divide dois ou mais números sem deixar resto. O MDC é obtido encontrando os fatores comuns aos números e selecionando o maior deles.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Maximo%20Divisor.h',
+    code: `
 int maxDiv(int num, int num2) {
 
     int i, soma = 0, max1 = 0, max2 = 0, max3 = 0;
@@ -29,14 +31,16 @@ int maxDiv(int num, int num2) {
     }
     return max3;
 }
-        `
-    },
-    {
-        id: '2',
-        title: 'Quais os divisores de um número', 
-        description: 'Divisores de um número são os números inteiros que podem ser divididos uniformemente por ele. Incluem o próprio número, 1 e outros fatores desse número.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Quais%20Os%20DIVISORES.h',
-        code: `
+        `,
+  },
+  {
+    id: '2',
+    title: 'Quais os divisores de um número',
+    description:
+      'Divisores de um número são os números inteiros que podem ser divididos uniformemente por ele. Incluem o próprio número, 1 e outros fatores desse número.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Quais%20Os%20DIVISORES.h',
+    code: `
 void quaisDiv(int num) {
 
     int i;
@@ -47,14 +51,16 @@ void quaisDiv(int num) {
         } 
     }
 }
-        `
-    },
-    { 
-        id: '3',
-        title: 'Quantidade de divisores de um número', 
-        description: 'A quantidade de divisores de um número é a contagem total de todos os números inteiros pelos quais o número pode ser dividido uniformemente, incluindo o próprio número e o 1.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Quantidade%20De%20DIVISORES.h',
-        code: `
+        `,
+  },
+  {
+    id: '3',
+    title: 'Quantidade de divisores de um número',
+    description:
+      'A quantidade de divisores de um número é a contagem total de todos os números inteiros pelos quais o número pode ser dividido uniformemente, incluindo o próprio número e o 1.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Quantidade%20De%20DIVISORES.h',
+    code: `
 int qtdDivisores(int num) {
 
     int i, cont = 0;
@@ -66,14 +72,16 @@ int qtdDivisores(int num) {
     }
     return cont;
 }
-        `
-    },
-    { 
-        id: '4',
-        title: 'Soma dos divisores de um número', 
-        description: 'A soma dos divisores de um número é o resultado da adição de todos os divisores desse número. Para calcular essa soma, é necessário identificar todos os divisores do número e, em seguida, somá-los.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Soma%20Dos%20Divisores.h',
-        code: `
+        `,
+  },
+  {
+    id: '4',
+    title: 'Soma dos divisores de um número',
+    description:
+      'A soma dos divisores de um número é o resultado da adição de todos os divisores desse número. Para calcular essa soma, é necessário identificar todos os divisores do número e, em seguida, somá-los.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/Soma%20Dos%20Divisores.h',
+    code: `
 int somaDiv(int num) {
 
     int i, soma = 0;
@@ -86,14 +94,16 @@ int somaDiv(int num) {
     
     return soma;
 }
-        `
-    },
-    { 
-        id: '5',
-        title: 'Calcula o divisor comum', 
-        description: 'Calcular o divisor comum de dois ou mais números envolve encontrar o maior número que divide uniformemente todos os números dados. Para isso, é necessário listar os divisores de cada número e identificar os divisores que são comuns a todos eles. ',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/calculaDivisorComum.h',
-        code: `
+        `,
+  },
+  {
+    id: '5',
+    title: 'Calcula o divisor comum',
+    description:
+      'Calcular o divisor comum de dois ou mais números envolve encontrar o maior número que divide uniformemente todos os números dados. Para isso, é necessário listar os divisores de cada número e identificar os divisores que são comuns a todos eles. ',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/calculaDivisorComum.h',
+    code: `
 int somaDiv(int num) {
 
     int i, soma = 0;
@@ -106,14 +116,16 @@ int somaDiv(int num) {
     
     return soma;
 }
-        `
-    },
-    { 
-        id: '6',
-        title: 'Criar árvore de natal', 
-        description: 'Exibe uma árvore de Natal no console, utilizando como parâmetro um número que representa o tamanho dessa árvore. Ela utiliza caracteres especiais, como asteriscos e espaços, para criar uma representação gráfica da árvore.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/Fazer%20Arvore%20de%20Natal.h',
-        code: `
+        `,
+  },
+  {
+    id: '6',
+    title: 'Criar árvore de natal',
+    description:
+      'Exibe uma árvore de Natal no console, utilizando como parâmetro um número que representa o tamanho dessa árvore. Ela utiliza caracteres especiais, como asteriscos e espaços, para criar uma representação gráfica da árvore.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/Fazer%20Arvore%20de%20Natal.h',
+    code: `
 int montaArvore(int num) {
     int i, j;
     
@@ -142,14 +154,16 @@ int montaArvore(int num) {
     }
     
 }
-        `
-    },
-    { 
-        id: '7',
-        title: 'Cria um losango', 
-        description: 'Exibe um losango no console, utilizando como parâmetro um número que representa o seu tamanho. Ele utiliza caracteres especiais, como asteriscos e espaços, para criar uma representação gráfica do losango.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/Fazer%20um%20Losango.h',
-        code: `
+        `,
+  },
+  {
+    id: '7',
+    title: 'Cria um losango',
+    description:
+      'Exibe um losango no console, utilizando como parâmetro um número que representa o seu tamanho. Ele utiliza caracteres especiais, como asteriscos e espaços, para criar uma representação gráfica do losango.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/Fazer%20um%20Losango.h',
+    code: `
 void dima(int num) {
 
     if (num % 2 == 0) {
@@ -185,14 +199,16 @@ void dima(int num) {
         }
     }
 }
-        `
-    },
-    { 
-        id: '8',
-        title: 'Cria um quadrado', 
-        description: 'Exibe um quadrado no console, utilizando como parâmetro a sua quantidade de linhas e colunas, além de ser possível passar um caracter específico para que esse quadrado seja montado.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/FazerQuadrado.h',
-        code: `
+        `,
+  },
+  {
+    id: '8',
+    title: 'Cria um quadrado',
+    description:
+      'Exibe um quadrado no console, utilizando como parâmetro a sua quantidade de linhas e colunas, além de ser possível passar um caracter específico para que esse quadrado seja montado.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/FazerQuadrado.h',
+    code: `
 void quadrado(int numLinhas, int numColunas, int caractere) {
 
     int i, count;
@@ -207,14 +223,16 @@ void quadrado(int numLinhas, int numColunas, int caractere) {
         }
     }
 }
-        `
-    },
-    { 
-        id: '9',
-        title: 'Cria um triângulo vazado / preenchido', 
-        description: 'Exibe um triângulo no console, utilizando como parâmetro um número para definir seu tamanho, além de uma opção para definir se o triângulo deve ser ou não preenchido com caracteres.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/TrianguloVazadoPreenchido.h',
-        code: `
+        `,
+  },
+  {
+    id: '9',
+    title: 'Cria um triângulo vazado / preenchido',
+    description:
+      'Exibe um triângulo no console, utilizando como parâmetro um número para definir seu tamanho, além de uma opção para definir se o triângulo deve ser ou não preenchido com caracteres.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/TrianguloVazadoPreenchido.h',
+    code: `
 void trianguloVazadoOuPreenchido(int num, char opcao) {
     int i, y, j;
     
@@ -245,14 +263,16 @@ void trianguloVazadoOuPreenchido(int num, char opcao) {
     }
 
 }
-        `
-    },
-    { 
-        id: '10',
-        title: 'Calcula número retangular e com intervalo', 
-        description: 'Números retangulares são números gerados a partir do produto de dois números consecutivos. São chamados assim pois podem ser representados em um formato retangular.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/RetangularComIntervalo.h',
-        code: `
+        `,
+  },
+  {
+    id: '10',
+    title: 'Calcula número retangular e com intervalo',
+    description:
+      'Números retangulares são números gerados a partir do produto de dois números consecutivos. São chamados assim pois podem ser representados em um formato retangular.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/RetangularComIntervalo.h',
+    code: `
 int calcularRetangular(int num) {
     int i = 2, n3 = 0, j, y;
     
@@ -294,14 +314,16 @@ void calcularRetangularComIntervalo(int inferior, int superior) {
         }
     }
 }
-        `
-    },
-    { 
-        id: '11',
-        title: 'Calcula número triangular e com intervalo', 
-        description: 'Um número triangular é um número que pode ser representado na forma de um triângulo equilátero de pontos. A sequência de números triangulares é obtida somando-se os números naturais consecutivos.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/TriangularComIntervalo.h',
-        code: `
+        `,
+  },
+  {
+    id: '11',
+    title: 'Calcula número triangular e com intervalo',
+    description:
+      'Um número triangular é um número que pode ser representado na forma de um triângulo equilátero de pontos. A sequência de números triangulares é obtida somando-se os números naturais consecutivos.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Formas%20Geometricas/TriangularComIntervalo.h',
+    code: `
 int calculaNumeroTriangular(int num) {
 
     int i = 1, n3 = 0;
@@ -332,14 +354,16 @@ void calculaNumeroTriangularComIntervalo(int inferior, int superior) {
         }
     }
 }
-        `
-    },
-    { 
-        id: '12',
-        title: 'Verifica se o ano é bissexto', 
-        description: 'Um ano bissexto é um ano que possui um dia extra, totalizando 366 dias, em vez dos 365 dias dos anos comuns. A função retorna 1 quando o ano passado por parâmetro é bissexto e 0 quando não é bissexto.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/anoBissexto.h',
-        code: `
+        `,
+  },
+  {
+    id: '12',
+    title: 'Verifica se o ano é bissexto',
+    description:
+      'Um ano bissexto é um ano que possui um dia extra, totalizando 366 dias, em vez dos 365 dias dos anos comuns. A função retorna 1 quando o ano passado por parâmetro é bissexto e 0 quando não é bissexto.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/anoBissexto.h',
+    code: `
 int anoBissexto(int year) {
     if (year % 4 == 0) {
         if (year % 100 == 0) {
@@ -355,14 +379,16 @@ int anoBissexto(int year) {
         return 0;
     }
 }
-        `
-    },
-    { 
-        id: '13',
-        title: 'Verifica se um número é feliz', 
-        description: 'Um número feliz é um número inteiro positivo que, ao substituir cada dígito pelo quadrado dele e somar repetidamente, resulta em 1. Esses números têm propriedades matemática associados à felicidade e harmonia numérica.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/calcularNumeroFeliz.h',
-        code: `
+        `,
+  },
+  {
+    id: '13',
+    title: 'Verifica se um número é feliz',
+    description:
+      'Um número feliz é um número inteiro positivo que, ao substituir cada dígito pelo quadrado dele e somar repetidamente, resulta em 1. Esses números têm propriedades matemática associados à felicidade e harmonia numérica.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/calcularNumeroFeliz.h',
+    code: `
 int calcularQuadradoDigitos(int numero) {
     int somaQuadrados = 0, proxDigito = 0;
 
@@ -390,14 +416,16 @@ int ehFeliz(int numero) {
     }
     return 0;
 }
-        `
-    },
-    { 
-        id: '14',
-        title: 'Verifica se um número é Armstrong', 
-        description: 'Um número Armstrong é um número inteiro positivo no qual a soma dos cubos de seus dígitos é igual ao próprio número. Esses números são raros e têm propriedades matemáticas únicas.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/numeroArmstrong.h',
-        code: `
+        `,
+  },
+  {
+    id: '14',
+    title: 'Verifica se um número é Armstrong',
+    description:
+      'Um número Armstrong é um número inteiro positivo no qual a soma dos cubos de seus dígitos é igual ao próprio número. Esses números são raros e têm propriedades matemáticas únicas.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/numeroArmstrong.h',
+    code: `
 int numeroArmstrong(int num) {
     int originalNum = num;
     int sum = 0;
@@ -418,14 +446,16 @@ int numeroArmstrong(int num) {
     
     return sum == originalNum;
 }
-        `
-    },
-    { 
-        id: '15',
-        title: 'Verifica se um número equivale a soma dos ímpares', 
-        description: 'Um número que equivale à soma dos ímpares é um número inteiro em que a sua representação é a soma de vários números ímpares consecutivos.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/numeroEquivaleSomaImpares.h',
-        code: `
+        `,
+  },
+  {
+    id: '15',
+    title: 'Verifica se um número equivale a soma dos ímpares',
+    description:
+      'Um número que equivale à soma dos ímpares é um número inteiro em que a sua representação é a soma de vários números ímpares consecutivos.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/numeroEquivaleSomaImpares.h',
+    code: `
 void numeroEquivaleSomaImpares (int num) {
 
     int i, soma = 0, resultado = 0;
@@ -462,14 +492,16 @@ void numeroEquivaleSomaImparesIntervalo(int inferior, int superior) {
         numeroEquivaleSomaImpares(i);
     }
 }
-        `
-    },
-    { 
-        id: '16',
-        title: 'Verifica se um número é perfeito', 
-        description: 'Um número perfeito é um número inteiro positivo que é igual à soma de seus divisores próprios (excluindo o próprio número).',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/numeroPerfeito.h',
-        code: `
+        `,
+  },
+  {
+    id: '16',
+    title: 'Verifica se um número é perfeito',
+    description:
+      'Um número perfeito é um número inteiro positivo que é igual à soma de seus divisores próprios (excluindo o próprio número).',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/numeroPerfeito.h',
+    code: `
 int numeroPerfeito(int num) {
     int sum = 0;
     
@@ -481,14 +513,16 @@ int numeroPerfeito(int num) {
     
     return sum == num;
 }
-        `
-    },
-    { 
-        id: '17',
-        title: 'Verifica se um número é palíndromo', 
-        description: 'Um número palíndromo é um número que permanece o mesmo quando lido da esquerda para a direita e vice-versa. Retorna 1 para quando o número é palíndromo.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/palindromo.h',
-        code: `
+        `,
+  },
+  {
+    id: '17',
+    title: 'Verifica se um número é palíndromo',
+    description:
+      'Um número palíndromo é um número que permanece o mesmo quando lido da esquerda para a direita e vice-versa. Retorna 1 para quando o número é palíndromo.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Numeros%20Com%20Condições%20Esquisitas/palindromo.h',
+    code: `
 //o parametro deve ser passado como string (ex: "5005")
 
 int isPalindrome(const char *str) {
@@ -502,14 +536,16 @@ int isPalindrome(const char *str) {
     
     return 1;
 }
-        `
-    },
-    { 
-        id: '18',
-        title: 'Calcula fatorial de um número', 
-        description: 'O fatorial de um número é o produto de todos os números inteiros positivos menores ou iguais a ele. É representado pelo símbolo "!".',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/Calculo%20de%20fatoriais.h',
-        code: `
+        `,
+  },
+  {
+    id: '18',
+    title: 'Calcula fatorial de um número',
+    description:
+      'O fatorial de um número é o produto de todos os números inteiros positivos menores ou iguais a ele. É representado pelo símbolo "!".',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/Calculo%20de%20fatoriais.h',
+    code: `
 int calculaFat(int num) {
     int i, fat=1;
 
@@ -531,14 +567,16 @@ void mostraFat(int num, int fat) {
     }
     printf("1 = %d\\n", fat);
 }
-        `
-    },
-    { 
-        id: '19',
-        title: 'Verifica se um número é primo', 
-        description: 'Um número primo é um número inteiro maior que 1 que possui apenas dois divisores: ele mesmo e 1. Retorna "cont" como 0, caso o número seja primo.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/Verifica%20se%20é%20primo.h',
-        code: `
+        `,
+  },
+  {
+    id: '19',
+    title: 'Verifica se um número é primo',
+    description:
+      'Um número primo é um número inteiro maior que 1 que possui apenas dois divisores: ele mesmo e 1. Retorna "cont" como 0, caso o número seja primo.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/Verifica%20se%20é%20primo.h',
+    code: `
 int primo(int num) {
     int i = 2, cont = 0, result;
     
@@ -553,14 +591,16 @@ int primo(int num) {
     }
     return cont;
 }
-        `
-    },
-    { 
-        id: '20',
-        title: 'Converte um número binário para decimal', 
-        description: 'Para realiar a conversão de binário para decimal, deve-se multiplicar cada dígito binário pela potência de 2 correspondente e somar os resultados.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/binarioParaDecimal.h',
-        code: `
+        `,
+  },
+  {
+    id: '20',
+    title: 'Converte um número binário para decimal',
+    description:
+      'Para realiar a conversão de binário para decimal, deve-se multiplicar cada dígito binário pela potência de 2 correspondente e somar os resultados.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/binarioParaDecimal.h',
+    code: `
 int binarioParaDecimal(long long binaryNum) {
     int decimalNum = 0;
     int base = 1;
@@ -574,14 +614,16 @@ int binarioParaDecimal(long long binaryNum) {
     
     return decimalNum;
 }
-        `
-    },
-    { 
-        id: '21',
-        title: 'Inverte um número inteiro', 
-        description: 'Inverter um número inteiro é o processo de reorganizar a ordem dos dígitos, de forma que o último se torne o primeiro e assim por diante.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/inverteInteiro.h',
-        code: `
+        `,
+  },
+  {
+    id: '21',
+    title: 'Inverte um número inteiro',
+    description:
+      'Inverter um número inteiro é o processo de reorganizar a ordem dos dígitos, de forma que o último se torne o primeiro e assim por diante.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/inverteInteiro.h',
+    code: `
 int inverteInteiro(int num) {
     int reversed = 0;
     
@@ -593,14 +635,16 @@ int inverteInteiro(int num) {
     
     return reversed;
 }
-        `
-    },
-    { 
-        id: '22',
-        title: 'Separar dígitos de um número', 
-        description: 'A função recebe um número inteiro e separa os seus dígitos, independente do tamanho do número original.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/pegarDigitoNumero.h',
-        code: `
+        `,
+  },
+  {
+    id: '22',
+    title: 'Separar dígitos de um número',
+    description:
+      'A função recebe um número inteiro e separa os seus dígitos, independente do tamanho do número original.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Pegar%20Caracteristicas%20do%20Número/pegarDigitoNumero.h',
+    code: `
 void pegarDigito(int numero) {
     int digito = 0, numeroSemUltimoDigito = 0;
     while (numero > 0) {
@@ -610,40 +654,46 @@ void pegarDigito(int numero) {
         numero /= 10;
     }
 }
-        `
-    },
-    { 
-        id: '23',
-        title: 'Gerar vetor de letras maiúsculas', 
-        description: 'Gera um vetor de letras maiúsculas aleatórias de A a Z, recebendo como parâmetro um tamanho definido.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Gerar%20Vetor%20Char%20Maiusculo.h',
-        code: `
+        `,
+  },
+  {
+    id: '23',
+    title: 'Gerar vetor de letras maiúsculas',
+    description:
+      'Gera um vetor de letras maiúsculas aleatórias de A a Z, recebendo como parâmetro um tamanho definido.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Gerar%20Vetor%20Char%20Maiusculo.h',
+    code: `
 void gerarVetorCharMaiscula(char vetor[], int tam) {
     for (int i = 0; i < tam; i++) {
         vetor[i] = rand() % 26 + 65;
     }
 }
-        `
-    },
-    { 
-        id: '24',
-        title: 'Gerar vetor de letras minúsculas', 
-        description: 'Gera um vetor de letras minúsculas aleatórias de A a Z, recebendo como parâmetro um tamanho definido.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Gerar%20Vetor%20Char%20Minusculo.h',
-        code: `
+        `,
+  },
+  {
+    id: '24',
+    title: 'Gerar vetor de letras minúsculas',
+    description:
+      'Gera um vetor de letras minúsculas aleatórias de A a Z, recebendo como parâmetro um tamanho definido.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Gerar%20Vetor%20Char%20Minusculo.h',
+    code: `
 void gerarVetorCharMinuscula(char vetor[], int tam) {
     for (int i = 0; i < tam; i++) {
         vetor[i] = rand() % 26 + 97;
     }
 }
-        `
-    },
-    { 
-        id: '25',
-        title: 'Mostra os elementos de um vetor char', 
-        description: 'Mostra no console todos os elementos de um vetor do tipo char.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Vetor%20CHAR.h',
-        code: `
+        `,
+  },
+  {
+    id: '25',
+    title: 'Mostra os elementos de um vetor char',
+    description:
+      'Mostra no console todos os elementos de um vetor do tipo char.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Vetor%20CHAR.h',
+    code: `
 void mostraVetorChar(char vet[], int tamanho, int num) {
     int i, j = 0;
 
@@ -657,14 +707,16 @@ void mostraVetorChar(char vet[], int tamanho, int num) {
         }
     }
 }
-        `
-    },
-    { 
-        id: '26',
-        title: 'Mostra os elementos de um vetor int', 
-        description: 'Mostra no console todos os elementos de um vetor do tipo inteiro.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Vetores%20INTEIROS.h',
-        code: `
+        `,
+  },
+  {
+    id: '26',
+    title: 'Mostra os elementos de um vetor int',
+    description:
+      'Mostra no console todos os elementos de um vetor do tipo inteiro.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Vetores%20INTEIROS.h',
+    code: `
 void mostraVetorInteiros(int vet[], int tamanho) {
     int i;
 
@@ -673,14 +725,16 @@ void mostraVetorInteiros(int vet[], int tamanho) {
         printf("%d ", vet[i]);
     }
 }
-        `
-    },
-    { 
-        id: '27',
-        title: 'Mostra os elementos de um vetor float', 
-        description: 'Mostra no console todos os elementos de um vetor do tipo float.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Vetores%20FLOAT.h',
-        code: `
+        `,
+  },
+  {
+    id: '27',
+    title: 'Mostra os elementos de um vetor float',
+    description:
+      'Mostra no console todos os elementos de um vetor do tipo float.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Vetores%20FLOAT.h',
+    code: `
 void mostraVetorFloat(float vet[], int tamanho) {
     int i;
 
@@ -689,14 +743,16 @@ void mostraVetorFloat(float vet[], int tamanho) {
         printf("%.1f  ", vet[i]);
     }
 }
-        `
-    },
-    { 
-        id: '28',
-        title: 'Mostra a soma dos elementos de um vetor float', 
-        description: 'Mostra no console a soma de todos os elementos de um vetor do tipo float.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Soma%20Vetores%20FLOAT.h',
-        code: `
+        `,
+  },
+  {
+    id: '28',
+    title: 'Mostra a soma dos elementos de um vetor float',
+    description:
+      'Mostra no console a soma de todos os elementos de um vetor do tipo float.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Mostrar%20Soma%20Vetores%20FLOAT.h',
+    code: `
 void mostraSomaVetorFloat(float vet[], int tamanho) {
     int i;
     float soma = 0;
@@ -706,14 +762,16 @@ void mostraSomaVetorFloat(float vet[], int tamanho) {
     }
     printf("\\nSoma: %.2f", soma);
 }
-        `
-    },
-    { 
-        id: '29',
-        title: 'Ordenar valores de um vetor int', 
-        description: 'Faz a ordenação, em ordem crescente, de todos os elementos de um vetor do tipo inteiro.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Ordenar%20Valores%20De%20Um%20Vetor.h',
-        code: `
+        `,
+  },
+  {
+    id: '29',
+    title: 'Ordenar valores de um vetor int',
+    description:
+      'Faz a ordenação, em ordem crescente, de todos os elementos de um vetor do tipo inteiro.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Ordenar%20Valores%20De%20Um%20Vetor.h',
+    code: `
 void ordenaVetor(int vetor[], int tam) {
     int aux, i, j;
     for (j = tam - 1; j > 0; j--) {
@@ -726,14 +784,16 @@ void ordenaVetor(int vetor[], int tam) {
         }
     }
 }
-        `
-    },
-    { 
-        id: '30',
-        title: 'Gera vetor float de 0 a 1', 
-        description: 'Gera um vetor de números do tipo float entre 0 e 1, recebendo como parâmetro um tamanho definido.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20Float%20de%200%20a%201.h',
-        code: `
+        `,
+  },
+  {
+    id: '30',
+    title: 'Gera vetor float de 0 a 1',
+    description:
+      'Gera um vetor de números do tipo float entre 0 e 1, recebendo como parâmetro um tamanho definido.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20Float%20de%200%20a%201.h',
+    code: `
 void geraVetorFloat0a1(float array[], int size) {
 
     srand(time(NULL));
@@ -742,14 +802,16 @@ void geraVetorFloat0a1(float array[], int size) {
         array[i] = (float) rand() / RAND_MAX;
     }
 }
-        `
-    },
-    { 
-        id: '31',
-        title: 'Gera vetor float de 0 a 100', 
-        description: 'Gera um vetor de números do tipo float entre 0 e 100, recebendo como parâmetro um tamanho definido.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20Float%20de%200%20a%20100.h',
-        code: `
+        `,
+  },
+  {
+    id: '31',
+    title: 'Gera vetor float de 0 a 100',
+    description:
+      'Gera um vetor de números do tipo float entre 0 e 100, recebendo como parâmetro um tamanho definido.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20Float%20de%200%20a%20100.h',
+    code: `
 void geraVetorFloat0a100(float array[], int size) {
 
     srand(time(NULL));
@@ -758,14 +820,16 @@ void geraVetorFloat0a100(float array[], int size) {
         array[i] = ((float) rand() / RAND_MAX)*100;
     }
 }
-        `
-    },
-    { 
-        id: '32',
-        title: 'Gera vetor int com limites positivos e negativos', 
-        description: 'Gera um vetor de números do tipo inteiro entre um intervalo, passado por parâmetro, positivo e negativo.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20com%20Limites%20Positivos%20e%20Negativos.h',
-        code: `
+        `,
+  },
+  {
+    id: '32',
+    title: 'Gera vetor int com limites positivos e negativos',
+    description:
+      'Gera um vetor de números do tipo inteiro entre um intervalo, passado por parâmetro, positivo e negativo.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20com%20Limites%20Positivos%20e%20Negativos.h',
+    code: `
 void atualizaVetorComLimitesNegativosEPositivos(int array[], int size, int min, 
 int max) {
 
@@ -775,14 +839,16 @@ int max) {
         array[i] = rand() % (max + min + 1) - min;
     }
 }
-        `
-    },
-    { 
-        id: '33',
-        title: 'Gera vetor int com limites positivos', 
-        description: 'Gera um vetor de números do tipo inteiro entre um intervalo, passado por parâmetro, apenas positivo.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20com%20Limites%20Positivos.h',
-        code: `
+        `,
+  },
+  {
+    id: '33',
+    title: 'Gera vetor int com limites positivos',
+    description:
+      'Gera um vetor de números do tipo inteiro entre um intervalo, passado por parâmetro, apenas positivo.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Vetor%20com%20Limites%20Positivos.h',
+    code: `
 void gerarVetorComLimitesPositivos(int array[], int size, int min, int max) {
 
     srand(time(NULL));
@@ -791,14 +857,16 @@ void gerarVetorComLimitesPositivos(int array[], int size, int min, int max) {
         array[i] = rand() % (max - min + 1) + min;
     }
 }
-        `
-    },
-    { 
-        id: '34',
-        title: 'Mostra pares e suas somas de um array sem números repetidos', 
-        description: 'Mostra todos os pares e a soma desses pares. Caso o array possua números repetidos, somente um número será considerado.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Pares%20De%20Um%20Array%20Sem%20Repetições.h',
-        code: `
+        `,
+  },
+  {
+    id: '34',
+    title: 'Mostra pares e suas somas de um array sem números repetidos',
+    description:
+      'Mostra todos os pares e a soma desses pares. Caso o array possua números repetidos, somente um número será considerado.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Pares%20De%20Um%20Array%20Sem%20Repetições.h',
+    code: `
 void paresAteUmNumero(int num) {
     int i;
     
@@ -831,14 +899,16 @@ void paresDeUmArraySemrepetidos(int vetor[], int tamanho) {
         }
     }
 }
-        `
-    },
-    { 
-        id: '35',
-        title: 'Mostra divisores e quantidade de um array sem números repetidos', 
-        description: 'Mostra todos os divisores e a quantidade desses divisores. Caso o array possua números repetidos, somente um número será considerado.',
-        githubLink: 'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/DivisoresDosElementosArraySemRepetições.h',
-        code: `
+        `,
+  },
+  {
+    id: '35',
+    title: 'Mostra divisores e quantidade de um array sem números repetidos',
+    description:
+      'Mostra todos os divisores e a quantidade desses divisores. Caso o array possua números repetidos, somente um número será considerado.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/DivisoresDosElementosArraySemRepetições.h',
+    code: `
 int qtdDivisores(int num) {
 
     int i, cont = 0;
@@ -873,6 +943,6 @@ void divisoresDeUmArraySemrepetidos(int vetor[], int tamanho) {
         }
     }
 }
-        `
-    },
-];
+        `,
+  },
+]
