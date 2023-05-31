@@ -1,6 +1,7 @@
-import { ArrowSquareIn, CaretLeft } from "phosphor-react";
+import { ArrowSquareIn, CaretLeft, GitBranch, GithubLogo } from "phosphor-react";
 import { ContainerOpenCardHeader } from "./styles";
 import { useNavigate } from "react-router-dom";
+import { LinkButton } from "../LinkButton";
 
 type OpenCardHeaderProps = {
     title: string;
@@ -17,8 +18,8 @@ export function OpenCardHeader({ title, githubLink }: OpenCardHeaderProps) {
     return (
         <ContainerOpenCardHeader>
             <div>
-                <a href="#" onClick={goBack}><CaretLeft size={20} /> VOLTAR</a>
-                <a href={githubLink} target="_blank">VER NO GITHUB <ArrowSquareIn size={20} /></a>
+                <button onClick={goBack}><CaretLeft size={20} /> VOLTAR</button>
+                <LinkButton text="VER NO GITHUB" icon={<GitBranch size={20} />} link={githubLink} target="_blank" />
             </div>
             <h1>{title}</h1>
         </ContainerOpenCardHeader>

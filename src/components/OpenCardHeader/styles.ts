@@ -12,16 +12,19 @@ export const ContainerOpenCardHeader = styled.header`
         justify-content: space-between;
         align-items: center;
 
-        a {
+        button {
+            background: transparent;
+            border: none;
             display: flex;
             align-items: center;
             color: var(--brand-blue);
             gap: 5px;
             font-size: 0.75rem;
             font-weight: 700;
+            cursor: pointer;
         }
 
-        a:hover {
+        button:hover {
             text-decoration: underline;
         }
     }

@@ -26,22 +26,10 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--base-title);
     }
 
-    main {
-        max-width: 1000px;
-        margin: auto;
-        padding: 0 40px;
-    }
-
     body, input, textarea, button {
         font-family: 'Poppins', monospace;
         font-weight: 400;
         font-size: 1rem;
-    }
-
-    @media (max-width: 900px) {
-        html {
-            font-size: 87.5%;
-        }
     }
 
     body::-webkit-scrollbar {
@@ -58,6 +46,12 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         font-family: 'Nunito', sans-serif;
         outline: none;
+    }
+
+    @media (max-width: 900px) {
+        html {
+            font-size: 87.5%;
+        }
     }
 
 `

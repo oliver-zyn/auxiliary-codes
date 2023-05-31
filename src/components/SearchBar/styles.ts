@@ -6,9 +6,16 @@ export const ContainerSearchBar = styled.section`
     flex-direction: column;
     gap: 12px;
 
-    span {
-        font-weight: 500;
-        color: var(--base-subtitle);
+    div {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            font-weight: 500;
+            color: var(--base-subtitle);
+        }
     }
     
     input {

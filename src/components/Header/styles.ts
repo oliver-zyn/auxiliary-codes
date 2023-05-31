@@ -16,11 +16,12 @@ export const HeaderContainer = styled.header`
 
     h1 {
         font-weight: 600;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     p, a {
         color: var(--base-subtitle);
+        font-size: 1.1rem;
     }
 
     a {

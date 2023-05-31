@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { OpenCardHeader } from "../../components/OpenCardHeader";
 import { cardData } from "../../utils/cardData";
 import { OpenCardContent } from "../../components/OpenCardContent";
-import { Header } from "../../components/Header";
 
 export function OpenCard() {
 
@@ -14,11 +13,8 @@ export function OpenCard() {
 
     return (
         <>
-            <Header />
-            <main>
-                <OpenCardHeader title={thisCard[0].title} githubLink={thisCard[0].githubLink} />
-                <OpenCardContent description={thisCard[0].description} code={thisCard[0].code} />
-            </main>
+            <OpenCardHeader title={thisCard[0].title} githubLink={thisCard[0].githubLink} />
+            <OpenCardContent description={thisCard[0].description} code={thisCard[0].code} />
         </>
     )
 }

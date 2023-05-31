@@ -25,19 +25,6 @@ export const ContainerCard = styled.article`
         font-size: 0.9rem;
     }
 
-    a {
-        display: flex;
-        align-items: center;
-        color: var(--brand-blue);
-        gap: 5px;
-        font-size: 0.75rem;
-        font-weight: 700;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
     @keyframes card-anim {
         0% {
             opacity: 0;
