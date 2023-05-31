@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerCard = styled.article`
 
     background: var(--base-card);
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 25px;
     opacity: 0;
     display: flex;

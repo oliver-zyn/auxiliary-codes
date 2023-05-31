@@ -32,4 +32,4 @@ export function CodeSnippet ({ code }: CodeSnippetProps) {
       </button>
     </ContainerCodeSnippet>
   );
-};
+}

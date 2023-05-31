@@ -5,6 +5,6 @@ export const ContainerCards = styled.section`
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 40px 0;
+    padding: 20px 0;
 
 `

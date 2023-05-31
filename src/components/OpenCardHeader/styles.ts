@@ -4,7 +4,7 @@ export const ContainerOpenCardHeader = styled.header`
 
     background: var(--base-card);
     margin-top: 40px;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 25px;
 
     div {

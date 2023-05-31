@@ -22,7 +22,7 @@ export const ContainerSearchBar = styled.section`
         border: 1px solid var(--base-border);
         outline: none;
         background: var(--base-input);
-        border-radius: 6px;
+        border-radius: 4px;
         padding: 9px 16px;
         color: var(--base-subtitle);
     }

@@ -13,6 +13,7 @@ export const ContainerLinkButton = styled.div`
 
     :hover {
         text-decoration: underline;
+        text-decoration-color: var(--brand-blue);
     }
 
 `
