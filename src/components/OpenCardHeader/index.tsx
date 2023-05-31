@@ -1,4 +1,4 @@
-import { ArrowSquareIn, CaretLeft, GitBranch, GithubLogo } from "phosphor-react";
+import { CaretLeft, GitBranch } from "phosphor-react";
 import { ContainerOpenCardHeader } from "./styles";
 import { useNavigate } from "react-router-dom";
 import { LinkButton } from "../LinkButton";
