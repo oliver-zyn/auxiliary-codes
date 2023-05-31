@@ -23,4 +23,8 @@ export const HeaderContainer = styled.header`
         color: var(--base-subtitle);
     }
 
+    a {
+        text-decoration: underline;
+    }
+
 `

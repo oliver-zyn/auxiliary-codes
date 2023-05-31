@@ -3,10 +3,11 @@ import { ContainerOpenCardHeader } from "./styles";
 import { useNavigate } from "react-router-dom";
 
 type OpenCardHeaderProps = {
-    title: string
+    title: string;
+    githubLink: string;
 }
 
-export function OpenCardHeader({ title }: OpenCardHeaderProps) {
+export function OpenCardHeader({ title, githubLink }: OpenCardHeaderProps) {
     const navigate = useNavigate();
 
     function goBack() {
@@ -17,7 +18,7 @@ export function OpenCardHeader({ title }: OpenCardHeaderProps) {
         <ContainerOpenCardHeader>
             <div>
                 <a href="#" onClick={goBack}><CaretLeft size={20} /> VOLTAR</a>
-                <a href="#">VER NO GITHUB <ArrowSquareIn size={20} /></a>
+                <a href={githubLink} target="_blank">VER NO GITHUB <ArrowSquareIn size={20} /></a>
             </div>
             <h1>{title}</h1>
         </ContainerOpenCardHeader>

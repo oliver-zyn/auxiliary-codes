@@ -1,5 +1,5 @@
+import { CodeSnippet } from "../CodeSnippet";
 import { ContainerOpenCardContent } from "./styles";
-import { Clipboard } from "phosphor-react";
 
 type OpenCardContentProps = {
     description: string;
@@ -11,11 +11,7 @@ export function OpenCardContent({ description, code }: OpenCardContentProps) {
         <ContainerOpenCardContent>
             <p>{description}</p>
 
-            <pre>
-                {code}
-
-                <span><Clipboard size={20} /></span>
-            </pre>
+            <CodeSnippet code={code} />
         </ContainerOpenCardContent>
     )
 }

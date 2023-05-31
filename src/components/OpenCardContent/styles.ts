@@ -10,19 +10,4 @@ export const ContainerOpenCardContent = styled.section`
         color: var(--base-text);
     }
 
-    pre {
-        font-family: monospace;
-        margin-top: 20px;
-        padding: 25px;
-        background: var(--base-card);
-        border-radius: 6px;
-        position: relative;
-
-        span {
-            position: absolute;
-            top: 25px;
-            right: 25px;
-        }
-    }
-
 `

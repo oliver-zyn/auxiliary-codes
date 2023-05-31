@@ -16,7 +16,7 @@ export function OpenCard() {
         <>
             <Header />
             <main>
-                <OpenCardHeader title={thisCard[0].title} />
+                <OpenCardHeader title={thisCard[0].title} githubLink={thisCard[0].githubLink} />
                 <OpenCardContent description={thisCard[0].description} code={thisCard[0].code} />
             </main>
         </>
