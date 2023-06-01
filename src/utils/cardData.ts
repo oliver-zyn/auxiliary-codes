@@ -945,4 +945,115 @@ void divisoresDeUmArraySemrepetidos(int vetor[], int tamanho) {
 }
         `,
   },
+  {
+    id: '36',
+    title: 'Gerar tabuada',
+    description:
+      'Gerar tabuada, de 0 a 10, de um número passado por parâmetro.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Novos%20Códigos/Gerar%20Tabuada.h',
+    code: `
+void gerarTabuada(int num) {
+
+    int result;
+    
+    for (int i = 0; i <= 10; i++) {
+        result = num * i;
+        printf("%d * %d = %d\\n", num, i, result);
+    }
+    
+}
+        `,
+  },
+  {
+    id: '37',
+    title: 'Gerar vetor int sem elementos repetidos',
+    description:
+      'Gera um vetor de números do tipo inteiro sem elementos repetidos, recebendo como parâmetro um tamanho definido.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Novos%20Códigos/GerarVetorSemRepeticao.h',
+    code: `
+void gerarVetorSemRepeticao(int vetor[], int tamanho, int limite) {
+
+    int i, num, j;
+    
+    srand(time(NULL));
+
+    for(i = 0; i < tamanho; i++) {
+        do {
+            
+            num = rand() % limite + 1;
+            
+            for (j = 0; j < i; j++) {
+                if (vetor[j] == num) {
+                    num = 0;
+                    break;
+                }
+            }
+            
+        } while (num == 0);
+        
+        vetor[i] = num;
+    }
+    
+}
+        `,
+  },
+  {
+    id: '38',
+    title: 'Verifica se um número existe num vetor int',
+    description:
+      'Verifica se um número, passado por parâmetro, já existe num vetor do tipo inteiro. Caso não exista, o count será retornado como 0.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Novos%20Códigos/Verifica%20Quantas%20Vezes%20o%20Numero%20tem%20no%20Vetor.h',
+    code: `
+int existeNoVetor(int vetor[], int size, int num) {
+
+    int i,count = 0;
+    
+    for (i = 0; i < size; i++) {
+        if (vetor[i] == num) {
+            count++;
+        }
+    }
+    return count;
+}
+        `,
+  },
+  {
+    id: '39',
+    title: 'Verifica a maior frequência de um número num vetor aleatório int',
+    description:
+      'Verifica e exibe qual número possui maior a frequência (vezes seguidas) num vetor aleatório do tipo inteiro.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Novos%20Códigos/Verifica%20as%20Ocorrências.h',
+    code: `
+int verificaAMaiorOcorrenciaNoVetor(int vetor[], int size) {
+
+    int soma, count, k, x, y, i;
+    
+    soma = 1;
+    count = 1;
+    for (i = 0; i < size; i++) {
+        
+        if (vetor[i] == y) {
+            count += 1;
+        } else {
+            count = 1;
+        }
+        if (soma < count) {
+            k = vetor[i];
+            soma = count;
+        }
+        y = vetor[i];
+    }
+    if (k == 0) {
+        printf("\\nMaior quantidade de ocorrencias: %i por que teve %i ocorrencias.", vetor[i], soma);
+    } else {
+        printf("\\nMaior quantidade de ocorrencias: %i por que teve %i ocorrencias.", k, soma);
+    }
+    
+}
+        `,
+  },
 ]
