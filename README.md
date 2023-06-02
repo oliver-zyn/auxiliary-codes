@@ -1,4 +1,4 @@
-# Todo List
+# Auxiliary Codes
 
 <img src="https://github.com/oliver-zyn/auxiliary-codes/assets/89222905/8898e96a-5fc5-462c-a3aa-6756518d44f1" width="600" />
 
