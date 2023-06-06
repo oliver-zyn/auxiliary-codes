@@ -1056,4 +1056,178 @@ int verificaAMaiorOcorrenciaNoVetor(int vetor[], int size) {
 }
         `,
   },
+    {
+    id: '40',
+    title: 'Comparar strings',
+    description:
+      'Compara duas strigs e retorna 1 caso as strings forem iguais, e 0 caso não forem iguais.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/comparaString.h',
+    code: `
+int comparaString(char str1[], char str2[]) {
+    int i = 0;
+
+    while (str1[i] != '\\0' && str2[i] != '\\0') {
+        if (str1[i] != str2[i]) {
+            return 0;
+        }
+        i++;
+    }
+
+    if (str1[i] == '\\0' && str2[i] == '\\0') {
+        return 1;
+    }
+
+    return 0;
+}
+        `,
+  },
+  {
+    id: '41',
+    title: 'Conta caracteres alfanuméricos',
+    description:
+      'Recebe uma string e mostra quantos caracteres alfabéticos e quantos numéricos ela possui.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/contaAlfaDecimal.h',
+    code: `
+void contaAlfaDecimal(char string[]) {
+    int i, countAlfa = 0, countDecimal = 0;
+    
+    for (i = 0; string[i] != '\\0'; i++) {
+        if (string[i] >= 'a' && string[i] <= 'z' || string[i] >= 'A' && string[i] <= 'Z') {
+            countAlfa++;
+        } else if (string[i] >= '0' && string[i] <= '9') {
+            countDecimal++;
+        }
+    }
+    
+    printf("Existem %d caracteres alfabeticos no texto.\\n", countAlfa);
+    printf("Existem %d caracteres numericos no texto.", countDecimal);
+}
+        `,
+  },
+  {
+    id: '42',
+    title: 'Conta quantas vogais uma string possui',
+    description:
+      'Recebe uma string e exibe quantas e quais vogais essa string possui.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/contaVogais.h',
+    code: `
+void contaVogais(int vetVogais[], char string[]) {
+
+    int i;
+    
+    for(i=0; string[i]!='\\0'; i++) {
+        if (string[i] == 'a' || string[i] == 'A') {
+            vetVogais[0]++;
+        } else if (string[i] == 'e' || string[i] == 'E') {
+            vetVogais[1]++;
+        } else if (string[i] == 'i' || string[i] == 'I') {
+            vetVogais[2]++;
+        } else if (string[i] == 'o' || string[i] == 'O') {
+            vetVogais[3]++;
+        } else if (string[i] == 'u' || string[i] == 'U') {
+            vetVogais[4]++;
+        }
+    }
+    
+    printf("\\nVOGAL\\t QUANTIDADE\\n");
+    printf("====================\\n");
+    printf("a/A\\t\\t%d\\n", vetVogais[0]);
+    printf("e/E\\t\\t%d\\n", vetVogais[1]);
+    printf("i/I\\t\\t%d\\n", vetVogais[2]);
+    printf("o/O\\t\\t%d\\n", vetVogais[3]);
+    printf("u/U\\t\\t%d\\n", vetVogais[4]);
+}
+        `,
+  },
+  {
+    id: '43',
+    title: 'Copia a primeira palavra da string',
+    description:
+      'Recebe uma string e exibe a primeira palavra.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/copiaPrimeiraPalavra.h',
+    code: `
+void copiaPrimeiraPalavra(char string[]) {
+    int i, j = 0, y = 0, primeiroEspaco = 0;
+    char stringPalavra[50];
+    
+    for (i = 0; string[i] != '\\0'; i++) {
+        
+        if (primeiroEspaco == 0) {
+            while (string[i] == ' ') {
+                i++;
+            }
+        }
+        
+        primeiroEspaco = 1;
+        
+        if (string[i] != ' ' && string[i] != '\\n') {
+            stringPalavra[j] = string[i];
+            j++;
+        } else {
+            break;
+        }
+        
+    }
+    
+    stringPalavra[j] = '\\0';
+    printf("%s\\n", stringPalavra);
+}
+        `,
+  },
+  {
+    id: '44',
+    title: 'Quebra linhas em palavras de uma string',
+    description:
+      'Recebe uma string e exibe uma palavra em baixo da outra.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/quebraLinha.h',
+    code: `
+void quebraLinha(char string[]) {
+    int i, j = 0, primeiroEspaco = 0;
+    char palavra[50];
+
+    printf("\\n==== TEXTO NA VERTICAL ====\\n");
+
+    for (i = 0; string[i] != '\\0'; i++) {
+        if (primeiroEspaco == 0) {
+            while (string[i] == ' ') {
+                i++;
+            }
+        }
+
+        primeiroEspaco = 1;
+
+        if (string[i] != ' ' && string[i] != '\\n') {
+            palavra[j] = string[i];
+            j++;
+        } else {
+            palavra[j] = '\\0';
+            printf("%s\\n", palavra);
+            j = 0;
+        }
+    }
+
+    palavra[j] = '\\0';
+    printf("%s", palavra);
+}
+        `,
+  },
+  {
+    id: '45',
+    title: 'Limpar buffer do teclado',
+    description:
+      'Função para limpar buffer do teclado.',
+    githubLink:
+      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/limpaBuffer.h',
+    code: `
+void limparBuffer() {
+    int c;
+    while ((c = getchar()) != '\\n' && c != EOF){}
+}
+        `,
+  },
 ]
