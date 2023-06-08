@@ -1230,4 +1230,213 @@ void limparBuffer() {
 }
         `,
   },
+  {
+    id: '46',
+    title: 'Concatenar Strings',
+    description:
+      'Recebe duas strings e as junta, formando uma string apenas.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/Concatena%20Strings.h',
+    code: `
+void concatenaStrings(char string1[], char string2[]) {
+  int size1 = 0, size2 = 0, i, j;
+
+  size1 = tamanhoString(string1);
+  size2 = tamanhoString(string2);
+
+  for (i = size1, j = 0; i < (size1 + size2); i++, j++) {
+    string1[i] = string2[j];
+  }
+
+  string1[size1 + size2] = '\\0';
+
+  printf("%s", string1);
+}
+        `,
+  },
+  {
+    id: '47',
+    title: 'Contador de espaços em uma string',
+    description:
+      'Recebe uma string e gera um vetor contendo a quantidade de espaços entre cada palavra da string.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/Conta%20Espaços%20de%20uma%20string.h',
+    code: `
+void contadorDeEspacos(char Vetor[]) {
+    int size = 0;
+    while(Vetor[size] != '\\0') {
+        size++;
+    }
+
+    int vetorEspacos[size], i, j = 0,count = 0;
+
+    for (i = 0; i < size; i++) {
+        if (Vetor[i] == ' ' && Vetor[i+1] == ' ') {
+            count++;
+        } else if (Vetor[i] == ' ' && Vetor[i+1] != ' ') {
+            count++;
+            vetorEspacos[j] = count;
+            j++;
+            count = 0;
+        }
+    }
+    printf("==== VETOR ESPACOS ====\\n");
+    for (i = 0; i < j; i++) {
+        printf("%d\\t", vetorEspacos[i]);
+    }
+}
+        `,
+  },
+  {
+    id: '48',
+    title: 'Verifica se uma string existe dentro de outra (includes)',
+    description:
+      'Recebe uma string e uma substring, então verifica se essa substring existe dentro da string.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/Função%20Include.h',
+    code: `
+int Includes(char string[], char substring[]) {
+    int resultado = 0, i = 0, j;
+
+    while(string[i] != '\\0') {
+        if (string[i] == substring[0]) {
+            j = 0;
+            while (substring[j] != '\\0' && string[i] != '\\0') {
+                if (string[i] != substring[j]) {
+                    break;
+                }
+                i++;
+                j++;
+            }
+            if (substring[j] == '\\0') {
+                resultado = 1;
+            }
+        }
+        i++;
+    }
+    return resultado;
+}
+        `,
+  },
+  {
+    id: '49',
+    title: 'Verifica o tamanho de uma string',
+    description:
+      'Recebe uma string retorna o seu tamanho.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/Tamanho%20de%20uma%20string.h',
+    code: `
+int tamanhoString(char str[]) {
+  int tamanho = 0;
+
+  while (str[tamanho] != '\\0') {
+    tamanho++;
+  }
+
+  return (tamanho - 1);
+}
+        `,
+  },
+  {
+    id: '50',
+    title: 'Conta quantas palavras uma string possui',
+    description:
+      'Recebe uma string retorna a quantidade de palavras que ela possui.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/contaPalavras.h',
+    code: `
+int contaPalavras(char string[]) {
+  int i = 0, size = 0, countPalavras = 0, novaPalavra = 1;
+
+  size = tamanhoString(string);
+
+  for(i = 0; i < size; i++) {
+    if (string[i] == ' ') {
+      novaPalavra = 1;
+    } else if (novaPalavra == 1) {
+      countPalavras++;
+      novaPalavra = 0;
+    }
+  }
+
+  return countPalavras;
+}
+        `,
+  },
+  {
+    id: '51',
+    title: 'Primeiras letras de cada palavra de uma string',
+    description:
+      'Recebe uma string e gera um vetor contendo as primeiras letras de cada palavra da string.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/primeirasLetras.h',
+    code: `
+int tamanhoString(char str[]) {
+  int tamanho = 0;
+
+  while (str[tamanho] != '\\0') {
+    tamanho++;
+  }
+
+  return (tamanho - 1);
+}
+
+void primeirasLetras(char vetor[], char string[]) {
+  int i = 0, size = 0, j = 0;
+
+  size = tamanhoString(string);
+
+  for (i = 0; i <= size; i++) {
+    if ((i == 0 && string[i] != ' ') || (string[i] != ' ' && string[i-1] == ' ')) {
+      vetor[j] = string[i];
+      j++;
+    }
+  }
+  
+  for (i = 0; i < j; i++) {
+    printf("%c  ", vetor[i]);
+  }
+  
+  printf("\\n");
+}
+        `,
+  },
+  {
+    id: '52',
+    title: 'Últimas letras de cada palavra de uma string',
+    description:
+      'Recebe uma string e gera um vetor contendo as últimas letras de cada palavra da string.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/ultimasLetras.h',
+    code: `
+int tamanhoString(char str[]) {
+  int tamanho = 0;
+
+  while (str[tamanho] != '\\0') {
+    tamanho++;
+  }
+
+  return (tamanho - 1);
+}
+
+void ultimasLetras(char vetor[], char string[]) {
+  int i = 0, size = 0, j = 0;
+
+  size = tamanhoString(string);
+
+  for(i = 0; i <= size; i++) {
+    if ((string[i] != ' ' && string[i+1] == ' ') || (string[i] != ' ' && string[i + 1] == '\\0')) {
+      vetor[j] = string[i];
+      j++;
+    }
+  }
+
+  for (i = 0; i < j; i++) {
+    printf("%c  ", vetor[i]);
+  }
+
+  printf("\\n");
+}
+        `,
+  },
 ]
