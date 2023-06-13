@@ -1543,5 +1543,165 @@ void calculaPotenciaPorVetores(int vetorbase[], int vetorexpoente[], int vetorRe
   }
 }
         `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Conta palavras e suas letras de uma string',
+    description:
+      'Gera um vetor com a quantidade de letras em cada palavra e retorna a quantidade de palavras na string.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/Conta%20as%20palavras%20e%20suas%20letras%20em%20uma%20string.h',
+    code: `
+int contadorDePalavras(char Vetor[], int vetorpalavras[]) {
+
+  int size = 0;
+  while(Vetor[size] != '\\0') {
+      size++;
   }
+
+  int vetorPalavras[size], i, j = 0,count = 0;
+
+  for (i = 0; i < size; i++) {
+      if (Vetor[i] != ' ') {
+          count++;
+          if (Vetor[i + 1] == ' ' || Vetor[i + 1] == '\\0') {
+              vetorPalavras[j] = count;
+              j++;
+              count = 0;
+          }
+      }
+  }
+
+  printf("==== VETOR PALAVRAS ====\\n");
+  for (i = 0; i < j; i++) {
+      printf("%d\\t", vetorPalavras[i]);
+      vetorpalavras[i] = vetorPalavras[i];
+  }
+  return j;
+  printf("\\n");
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Conta espaços de uma string + quantas vezes a sequência se repete',
+    description:
+      'Conta espaços de uma string e quantas vezes essa sequência de espaços se repete.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/Contador%20de%20espaços%20Modificado.h',
+    code: `
+int contadorDeEspacos(char Vetor[], int vetorespacos[]) {
+
+  int size = 0;
+  while(Vetor[size] != '\\0') {
+      size++;
+  }
+
+  int vetorEspacos[size], i, j = 0,count = 0;
+
+  for (i = 0; i < size; i++) {
+      if (Vetor[i] == ' ' && Vetor[i+1] == ' ') {
+          count++;
+      } else if (Vetor[i] == ' ' && Vetor[i+1] != ' ') {
+          count++;
+          vetorEspacos[j] = count;
+          j++;
+          count = 0;
+      }
+  }
+  printf("==== VETOR ESPACOS ====\\n");
+  for (i = 0; i < j; i++) {
+      printf("%d\\t", vetorEspacos[i]);
+      vetorespacos[i] = vetorEspacos[i];
+  }
+  return j;
+  printf("\\n");
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Gera um vetor de inteiros sem números repetidos',
+    description:
+      'Recebe um vetor com números repetidos, e gera um outro vetor sem as repetições do primeiro vetor.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Retorna%20um%20vetor%20sem%20Repetições%20de%20números.h',
+    code: `
+void semRepeticao(int vetor[], int result[], int tamanho) {
+
+  int j = 0;
+  for(int i=0; i<tamanho; i++) {
+        if (i == 0 || vetor[i] != vetor[i-1]) {
+            result[j] = vetor[i];
+            j++;
+        }
+    }
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Conta quantas vezes um número se repete em um vetor + gera vetor sem repetidos',
+    description:
+      'A segunda função conta quantas vezes um número se repete em um vetor e a primeira gera vetor sem repetidos.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Contagem%20de%20Números.h',
+    code: `
+void semRepeticao(int vetor[], int result[], int tamanho) {
+
+  int j = 0;
+  for(int i=0; i<tamanho; i++) {
+        if (i == 0 || vetor[i] != vetor[i-1]) {
+            result[j] = vetor[i];
+            j++;
+        }
+    }
+}
+
+void contagemDeNumeros(int vetor[], int result[], int size) {
+  
+  int j = 0, count = 0;
+
+  for(int i = 0; i < size; i++) {
+      if (vetor[i] == vetor[i+1]) {
+        count++;
+      } else {
+        result[j] = count;
+        count = 0;
+        j++;
+      }
+    }
+  int resultado[size];
+  semRepeticao(vetor, resultado, size);
+  printf("\\n==== MATRIZ ====\\n");
+  for (int i = 0; i < j; i++) {
+    printf("%d\\t%d\\n", resultado[i], result[i]+1);
+  }  
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Verifica os primos + quantidade de divisores + mostra todos os elementos de um vetor',
+    description:
+      'Verifica os primos, a quantidade de divisores e mostra todos os elementos de um vetor de inteiros.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Divisores%20de%20um%20array%20modificado.h',
+    code: `
+void divisoresDeUmArraySemrepetidos(int vetor[], int tamanho) {
+    int i, qtde = 0;
+    printf("\\nVALOR\\tQTDE DIVIDORES PRIMO\\n");
+    for(i=0; i<tamanho; i++) {
+        if (i == 0 || vetor[i] != vetor[i-1]) {
+            qtde = qtdDivisores(vetor[i]);
+            if (primo(vetor[i]) == 0 && vetor[i] != 1) {
+              printf("%d\\t%d\\t\\tSIM\\n",vetor[i], qtde);
+            } else if (primo(vetor[i]) == 1 || vetor[i] == 1) {
+              printf("%d\\t%d\\t\\tNAO\\n",vetor[i], qtde);
+            }
+        }
+    }
+}
+        `,
+  },
 ]
