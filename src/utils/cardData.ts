@@ -1,6 +1,6 @@
 export const cardData = [
   {
-    id: '1',
+    id: crypto.randomUUID(),
     title: 'Máximo Divisor',
     description:
       'O maior divisor comum (MDC) é o maior número que divide dois ou mais números sem deixar resto. O MDC é obtido encontrando os fatores comuns aos números e selecionando o maior deles.',
@@ -34,7 +34,7 @@ int maxDiv(int num, int num2) {
         `,
   },
   {
-    id: '2',
+    id: crypto.randomUUID(),
     title: 'Quais os divisores de um número',
     description:
       'Divisores de um número são os números inteiros que podem ser divididos uniformemente por ele. Incluem o próprio número, 1 e outros fatores desse número.',
@@ -54,7 +54,7 @@ void quaisDiv(int num) {
         `,
   },
   {
-    id: '3',
+    id: crypto.randomUUID(),
     title: 'Quantidade de divisores de um número',
     description:
       'A quantidade de divisores de um número é a contagem total de todos os números inteiros pelos quais o número pode ser dividido uniformemente, incluindo o próprio número e o 1.',
@@ -75,7 +75,7 @@ int qtdDivisores(int num) {
         `,
   },
   {
-    id: '4',
+    id: crypto.randomUUID(),
     title: 'Soma dos divisores de um número',
     description:
       'A soma dos divisores de um número é o resultado da adição de todos os divisores desse número. Para calcular essa soma, é necessário identificar todos os divisores do número e, em seguida, somá-los.',
@@ -97,7 +97,7 @@ int somaDiv(int num) {
         `,
   },
   {
-    id: '5',
+    id: crypto.randomUUID(),
     title: 'Calcula o divisor comum',
     description:
       'Calcular o divisor comum de dois ou mais números envolve encontrar o maior número que divide uniformemente todos os números dados. Para isso, é necessário listar os divisores de cada número e identificar os divisores que são comuns a todos eles. ',
@@ -119,7 +119,7 @@ int somaDiv(int num) {
         `,
   },
   {
-    id: '6',
+    id: crypto.randomUUID(),
     title: 'Criar árvore de natal',
     description:
       'Exibe uma árvore de Natal no console, utilizando como parâmetro um número que representa o tamanho dessa árvore. Ela utiliza caracteres especiais, como asteriscos e espaços, para criar uma representação gráfica da árvore.',
@@ -157,7 +157,7 @@ int montaArvore(int num) {
         `,
   },
   {
-    id: '7',
+    id: crypto.randomUUID(),
     title: 'Cria um losango',
     description:
       'Exibe um losango no console, utilizando como parâmetro um número que representa o seu tamanho. Ele utiliza caracteres especiais, como asteriscos e espaços, para criar uma representação gráfica do losango.',
@@ -202,7 +202,7 @@ void dima(int num) {
         `,
   },
   {
-    id: '8',
+    id: crypto.randomUUID(),
     title: 'Cria um quadrado',
     description:
       'Exibe um quadrado no console, utilizando como parâmetro a sua quantidade de linhas e colunas, além de ser possível passar um caracter específico para que esse quadrado seja montado.',
@@ -226,7 +226,7 @@ void quadrado(int numLinhas, int numColunas, int caractere) {
         `,
   },
   {
-    id: '9',
+    id: crypto.randomUUID(),
     title: 'Cria um triângulo vazado / preenchido',
     description:
       'Exibe um triângulo no console, utilizando como parâmetro um número para definir seu tamanho, além de uma opção para definir se o triângulo deve ser ou não preenchido com caracteres.',
@@ -266,7 +266,7 @@ void trianguloVazadoOuPreenchido(int num, char opcao) {
         `,
   },
   {
-    id: '10',
+    id: crypto.randomUUID(),
     title: 'Calcula número retangular e com intervalo',
     description:
       'Números retangulares são números gerados a partir do produto de dois números consecutivos. São chamados assim pois podem ser representados em um formato retangular.',
@@ -317,7 +317,7 @@ void calcularRetangularComIntervalo(int inferior, int superior) {
         `,
   },
   {
-    id: '11',
+    id: crypto.randomUUID(),
     title: 'Calcula número triangular e com intervalo',
     description:
       'Um número triangular é um número que pode ser representado na forma de um triângulo equilátero de pontos. A sequência de números triangulares é obtida somando-se os números naturais consecutivos.',
@@ -357,7 +357,7 @@ void calculaNumeroTriangularComIntervalo(int inferior, int superior) {
         `,
   },
   {
-    id: '12',
+    id: crypto.randomUUID(),
     title: 'Verifica se o ano é bissexto',
     description:
       'Um ano bissexto é um ano que possui um dia extra, totalizando 366 dias, em vez dos 365 dias dos anos comuns. A função retorna 1 quando o ano passado por parâmetro é bissexto e 0 quando não é bissexto.',
@@ -382,7 +382,7 @@ int anoBissexto(int year) {
         `,
   },
   {
-    id: '13',
+    id: crypto.randomUUID(),
     title: 'Verifica se um número é feliz',
     description:
       'Um número feliz é um número inteiro positivo que, ao substituir cada dígito pelo quadrado dele e somar repetidamente, resulta em 1. Esses números têm propriedades matemática associados à felicidade e harmonia numérica.',
@@ -419,7 +419,7 @@ int ehFeliz(int numero) {
         `,
   },
   {
-    id: '14',
+    id: crypto.randomUUID(),
     title: 'Verifica se um número é Armstrong',
     description:
       'Um número Armstrong é um número inteiro positivo no qual a soma dos cubos de seus dígitos é igual ao próprio número. Esses números são raros e têm propriedades matemáticas únicas.',
@@ -449,7 +449,7 @@ int numeroArmstrong(int num) {
         `,
   },
   {
-    id: '15',
+    id: crypto.randomUUID(),
     title: 'Verifica se um número equivale a soma dos ímpares',
     description:
       'Um número que equivale à soma dos ímpares é um número inteiro em que a sua representação é a soma de vários números ímpares consecutivos.',
@@ -495,7 +495,7 @@ void numeroEquivaleSomaImparesIntervalo(int inferior, int superior) {
         `,
   },
   {
-    id: '16',
+    id: crypto.randomUUID(),
     title: 'Verifica se um número é perfeito',
     description:
       'Um número perfeito é um número inteiro positivo que é igual à soma de seus divisores próprios (excluindo o próprio número).',
@@ -516,7 +516,7 @@ int numeroPerfeito(int num) {
         `,
   },
   {
-    id: '17',
+    id: crypto.randomUUID(),
     title: 'Verifica se um número é palíndromo',
     description:
       'Um número palíndromo é um número que permanece o mesmo quando lido da esquerda para a direita e vice-versa. Retorna 1 para quando o número é palíndromo.',
@@ -539,7 +539,7 @@ int isPalindrome(const char *str) {
         `,
   },
   {
-    id: '18',
+    id: crypto.randomUUID(),
     title: 'Calcula fatorial de um número',
     description:
       'O fatorial de um número é o produto de todos os números inteiros positivos menores ou iguais a ele. É representado pelo símbolo "!".',
@@ -570,7 +570,7 @@ void mostraFat(int num, int fat) {
         `,
   },
   {
-    id: '19',
+    id: crypto.randomUUID(),
     title: 'Verifica se um número é primo',
     description:
       'Um número primo é um número inteiro maior que 1 que possui apenas dois divisores: ele mesmo e 1. Retorna "cont" como 0, caso o número seja primo.',
@@ -594,7 +594,7 @@ int primo(int num) {
         `,
   },
   {
-    id: '20',
+    id: crypto.randomUUID(),
     title: 'Converte um número binário para decimal',
     description:
       'Para realiar a conversão de binário para decimal, deve-se multiplicar cada dígito binário pela potência de 2 correspondente e somar os resultados.',
@@ -617,7 +617,7 @@ int binarioParaDecimal(long long binaryNum) {
         `,
   },
   {
-    id: '21',
+    id: crypto.randomUUID(),
     title: 'Inverte um número inteiro',
     description:
       'Inverter um número inteiro é o processo de reorganizar a ordem dos dígitos, de forma que o último se torne o primeiro e assim por diante.',
@@ -638,7 +638,7 @@ int inverteInteiro(int num) {
         `,
   },
   {
-    id: '22',
+    id: crypto.randomUUID(),
     title: 'Separar dígitos de um número',
     description:
       'A função recebe um número inteiro e separa os seus dígitos, independente do tamanho do número original.',
@@ -657,7 +657,7 @@ void pegarDigito(int numero) {
         `,
   },
   {
-    id: '23',
+    id: crypto.randomUUID(),
     title: 'Gerar vetor de letras maiúsculas',
     description:
       'Gera um vetor de letras maiúsculas aleatórias de A a Z, recebendo como parâmetro um tamanho definido.',
@@ -672,7 +672,7 @@ void gerarVetorCharMaiscula(char vetor[], int tam) {
         `,
   },
   {
-    id: '24',
+    id: crypto.randomUUID(),
     title: 'Gerar vetor de letras minúsculas',
     description:
       'Gera um vetor de letras minúsculas aleatórias de A a Z, recebendo como parâmetro um tamanho definido.',
@@ -687,7 +687,7 @@ void gerarVetorCharMinuscula(char vetor[], int tam) {
         `,
   },
   {
-    id: '25',
+    id: crypto.randomUUID(),
     title: 'Mostra os elementos de um vetor char',
     description:
       'Mostra no console todos os elementos de um vetor do tipo char.',
@@ -710,7 +710,7 @@ void mostraVetorChar(char vet[], int tamanho, int num) {
         `,
   },
   {
-    id: '26',
+    id: crypto.randomUUID(),
     title: 'Mostra os elementos de um vetor int',
     description:
       'Mostra no console todos os elementos de um vetor do tipo inteiro.',
@@ -728,7 +728,7 @@ void mostraVetorInteiros(int vet[], int tamanho) {
         `,
   },
   {
-    id: '27',
+    id: crypto.randomUUID(),
     title: 'Mostra os elementos de um vetor float',
     description:
       'Mostra no console todos os elementos de um vetor do tipo float.',
@@ -746,7 +746,7 @@ void mostraVetorFloat(float vet[], int tamanho) {
         `,
   },
   {
-    id: '28',
+    id: crypto.randomUUID(),
     title: 'Mostra a soma dos elementos de um vetor float',
     description:
       'Mostra no console a soma de todos os elementos de um vetor do tipo float.',
@@ -765,7 +765,7 @@ void mostraSomaVetorFloat(float vet[], int tamanho) {
         `,
   },
   {
-    id: '29',
+    id: crypto.randomUUID(),
     title: 'Ordenar valores de um vetor int',
     description:
       'Faz a ordenação, em ordem crescente, de todos os elementos de um vetor do tipo inteiro.',
@@ -787,7 +787,7 @@ void ordenaVetor(int vetor[], int tam) {
         `,
   },
   {
-    id: '30',
+    id: crypto.randomUUID(),
     title: 'Gera vetor float de 0 a 1',
     description:
       'Gera um vetor de números do tipo float entre 0 e 1, recebendo como parâmetro um tamanho definido.',
@@ -805,7 +805,7 @@ void geraVetorFloat0a1(float array[], int size) {
         `,
   },
   {
-    id: '31',
+    id: crypto.randomUUID(),
     title: 'Gera vetor float de 0 a 100',
     description:
       'Gera um vetor de números do tipo float entre 0 e 100, recebendo como parâmetro um tamanho definido.',
@@ -823,7 +823,7 @@ void geraVetorFloat0a100(float array[], int size) {
         `,
   },
   {
-    id: '32',
+    id: crypto.randomUUID(),
     title: 'Gera vetor int com limites positivos e negativos',
     description:
       'Gera um vetor de números do tipo inteiro entre um intervalo, passado por parâmetro, positivo e negativo.',
@@ -842,7 +842,7 @@ int max) {
         `,
   },
   {
-    id: '33',
+    id: crypto.randomUUID(),
     title: 'Gera vetor int com limites positivos',
     description:
       'Gera um vetor de números do tipo inteiro entre um intervalo, passado por parâmetro, apenas positivo.',
@@ -860,7 +860,7 @@ void gerarVetorComLimitesPositivos(int array[], int size, int min, int max) {
         `,
   },
   {
-    id: '34',
+    id: crypto.randomUUID(),
     title: 'Mostra pares e suas somas de um array sem números repetidos',
     description:
       'Mostra todos os pares e a soma desses pares. Caso o array possua números repetidos, somente um número será considerado.',
@@ -902,7 +902,7 @@ void paresDeUmArraySemrepetidos(int vetor[], int tamanho) {
         `,
   },
   {
-    id: '35',
+    id: crypto.randomUUID(),
     title: 'Mostra divisores e quantidade de um array sem números repetidos',
     description:
       'Mostra todos os divisores e a quantidade desses divisores. Caso o array possua números repetidos, somente um número será considerado.',
@@ -946,7 +946,7 @@ void divisoresDeUmArraySemrepetidos(int vetor[], int tamanho) {
         `,
   },
   {
-    id: '36',
+    id: crypto.randomUUID(),
     title: 'Gerar tabuada',
     description:
       'Gerar tabuada, de 0 a 10, de um número passado por parâmetro.',
@@ -966,7 +966,7 @@ void gerarTabuada(int num) {
         `,
   },
   {
-    id: '37',
+    id: crypto.randomUUID(),
     title: 'Gerar vetor int sem elementos repetidos',
     description:
       'Gera um vetor de números do tipo inteiro sem elementos repetidos, recebendo como parâmetro um tamanho definido.',
@@ -1000,7 +1000,7 @@ void gerarVetorSemRepeticao(int vetor[], int tamanho, int limite) {
         `,
   },
   {
-    id: '38',
+    id: crypto.randomUUID(),
     title: 'Verifica se um número existe num vetor int',
     description:
       'Verifica se um número, passado por parâmetro, já existe num vetor do tipo inteiro. Caso não exista, o count será retornado como 0.',
@@ -1021,7 +1021,7 @@ int existeNoVetor(int vetor[], int size, int num) {
         `,
   },
   {
-    id: '39',
+    id: crypto.randomUUID(),
     title: 'Verifica a maior frequência de um número num vetor aleatório int',
     description:
       'Verifica e exibe qual número possui maior a frequência (vezes seguidas) num vetor aleatório do tipo inteiro.',
@@ -1056,14 +1056,14 @@ int verificaAMaiorOcorrenciaNoVetor(int vetor[], int size) {
 }
         `,
   },
-    {
-    id: '40',
-    title: 'Comparar strings',
-    description:
-      'Compara duas strigs e retorna 1 caso as strings forem iguais, e 0 caso não forem iguais.',
-    githubLink:
-      'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/comparaString.h',
-    code: `
+  {
+  id: crypto.randomUUID(),
+  title: 'Comparar strings',
+  description:
+    'Compara duas strigs e retorna 1 caso as strings forem iguais, e 0 caso não forem iguais.',
+  githubLink:
+    'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/comparaString.h',
+  code: `
 int comparaString(char str1[], char str2[]) {
     int i = 0;
 
@@ -1083,7 +1083,7 @@ int comparaString(char str1[], char str2[]) {
         `,
   },
   {
-    id: '41',
+    id: crypto.randomUUID(),
     title: 'Conta caracteres alfanuméricos',
     description:
       'Recebe uma string e mostra quantos caracteres alfabéticos e quantos numéricos ela possui.',
@@ -1107,7 +1107,7 @@ void contaAlfaDecimal(char string[]) {
         `,
   },
   {
-    id: '42',
+    id: crypto.randomUUID(),
     title: 'Conta quantas vogais uma string possui',
     description:
       'Recebe uma string e exibe quantas e quais vogais essa string possui.',
@@ -1143,7 +1143,7 @@ void contaVogais(int vetVogais[], char string[]) {
         `,
   },
   {
-    id: '43',
+    id: crypto.randomUUID(),
     title: 'Copia a primeira palavra da string',
     description:
       'Recebe uma string e exibe a primeira palavra.',
@@ -1179,7 +1179,7 @@ void copiaPrimeiraPalavra(char string[]) {
         `,
   },
   {
-    id: '44',
+    id: crypto.randomUUID(),
     title: 'Quebra linhas em palavras de uma string',
     description:
       'Recebe uma string e exibe uma palavra em baixo da outra.',
@@ -1217,7 +1217,7 @@ void quebraLinha(char string[]) {
         `,
   },
   {
-    id: '45',
+    id: crypto.randomUUID(),
     title: 'Limpar buffer do teclado',
     description:
       'Função para limpar buffer do teclado.',
@@ -1231,7 +1231,7 @@ void limparBuffer() {
         `,
   },
   {
-    id: '46',
+    id: crypto.randomUUID(),
     title: 'Concatenar Strings',
     description:
       'Recebe duas strings e as junta, formando uma string apenas.',
@@ -1255,7 +1255,7 @@ void concatenaStrings(char string1[], char string2[]) {
         `,
   },
   {
-    id: '47',
+    id: crypto.randomUUID(),
     title: 'Contador de espaços em uma string',
     description:
       'Recebe uma string e gera um vetor contendo a quantidade de espaços entre cada palavra da string.',
@@ -1288,7 +1288,7 @@ void contadorDeEspacos(char Vetor[]) {
         `,
   },
   {
-    id: '48',
+    id: crypto.randomUUID(),
     title: 'Verifica se uma string existe dentro de outra (includes)',
     description:
       'Recebe uma string e uma substring, então verifica se essa substring existe dentro da string.',
@@ -1319,7 +1319,7 @@ int Includes(char string[], char substring[]) {
         `,
   },
   {
-    id: '49',
+    id: crypto.randomUUID(),
     title: 'Verifica o tamanho de uma string',
     description:
       'Recebe uma string retorna o seu tamanho.',
@@ -1338,7 +1338,7 @@ int tamanhoString(char str[]) {
         `,
   },
   {
-    id: '50',
+    id: crypto.randomUUID(),
     title: 'Conta quantas palavras uma string possui',
     description:
       'Recebe uma string retorna a quantidade de palavras que ela possui.',
@@ -1364,7 +1364,7 @@ int contaPalavras(char string[]) {
         `,
   },
   {
-    id: '51',
+    id: crypto.randomUUID(),
     title: 'Primeiras letras de cada palavra de uma string',
     description:
       'Recebe uma string e gera um vetor contendo as primeiras letras de cada palavra da string.',
@@ -1402,7 +1402,7 @@ void primeirasLetras(char vetor[], char string[]) {
         `,
   },
   {
-    id: '52',
+    id: crypto.randomUUID(),
     title: 'Últimas letras de cada palavra de uma string',
     description:
       'Recebe uma string e gera um vetor contendo as últimas letras de cada palavra da string.',
@@ -1439,4 +1439,109 @@ void ultimasLetras(char vetor[], char string[]) {
 }
         `,
   },
+  {
+    id: crypto.randomUUID(),
+    title: 'Gerar matriz aleatória de inteiros',
+    description:
+      'Gera uma matriz de números inteiros aleatórios de 1 até um limite informado.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Matrizes/Gerar%20matriz%20aleatória.h',
+    code: `
+void gerarMatrizInteiro(int linha, int coluna, int matriz[linha][coluna], int limite) {
+
+  srand(time(NULL));
+
+  for (int j = 0; j < linha; j++) {
+      for (int i = 0; i < coluna; i++) {
+          matriz[j][i] = (rand() % limite) + 1;
+      }
+  }
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Gerar matriz preenchida de inteiros',
+    description:
+      'Gera uma matriz preenchida por um número inteiro informado.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Matrizes/Gerar%20matriz%20preenchida%20por%20número.h',
+    code: `
+void gerarMatrizInteiroPreenchida(int linha, int coluna, int matriz[linha][coluna], int num) {
+
+  for (int j = 0; j < linha; j++) {
+      for (int i = 0; i < coluna; i++) {
+          matriz[j][i] = num;
+      }
+  }
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Mostra matriz de inteiros',
+    description:
+      'Mostra todos os elementos de uma matriz de números inteiros.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Matrizes/mostrar%20Matriz%20Inteira.h',
+    code: `
+void mostrarMatrizInteiro(int linha, int coluna, int matriz[linha][coluna]) {
+
+  for (int j = 0; j < linha; j++) {
+      for (int i = 0; i < coluna; i++) {
+          printf("%d ", matriz[j][i]);
+      }
+      printf("\\n");
+  }
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Calcula potência',
+    description:
+      'Recebe uma base e um expoente, retornando o valor da potência.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Calcular%20Potência.h',
+    code: `
+int calcularPotencia(int base, int expoente) {
+
+  int resultado = 1;
+
+  for (int i = 0; i < expoente; i++) {
+      resultado *= base;
+  }
+  return resultado;
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Calcula potência de vetores',
+    description:
+      'Recebe dois vetores, um contendo os números da base e o outro contendo os números dos expoentes e ao fim armazena os resultados em outro vetor.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Calcula%20Potência%20com%20vetores.h',
+    code: `
+int calcularPotencia(int base, int expoente) {
+  int resultado = 1;
+
+  for (int i = 0; i < expoente; i++) {
+      resultado *= base;
+  }
+  return resultado;
+}
+
+void calculaPotenciaPorVetores(int vetorbase[], int vetorexpoente[], int vetorResultado[], int tamanho) {
+
+  printf("BASE\\tEXPOENTE\\tRESULTADO\\n");
+  for (int i = 0; i < tamanho; i++) {
+      int base = vetorbase[i];
+      int expoente = vetorexpoente[i];
+      vetorResultado[i] = calcularPotencia(base, expoente);
+      printf("%d\\t%d\\t\\t%d\\n", base, expoente, vetorResultado[i]);
+  }
+}
+        `,
+  }
 ]
