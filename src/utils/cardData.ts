@@ -1704,4 +1704,238 @@ void divisoresDeUmArraySemrepetidos(int vetor[], int tamanho) {
 }
         `,
   },
+  {
+    id: crypto.randomUUID(),
+    title: 'Gaguejar string',
+    description:
+      'Função que duplica cada vogal da string.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/gaguejarString.h',
+    code: `
+int tamanhoString(char str[]) {
+  int tamanho = 0;
+
+  while (str[tamanho] != '\\0') {
+    tamanho++;
+  }
+
+  return (tamanho - 1);
+}
+
+int verificaVogal(char letra) {
+  int result = 0;
+  
+  if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+      result++;
+  }
+
+  if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+      result++;
+  }
+
+  return result;
+}
+
+void gaguejarString(char string[], char stringGaguejada[]) {
+
+  int tamanho, i = 0, j = 0, count = 1;
+  
+  tamanho = tamanhoString(string);
+
+  for(i = 0; i <= tamanho; i++) {
+    if (verificaVogal(string[i]) != 0) {
+      stringGaguejada[j] = string[i];
+      for (int k = 1; k <= count; k++) {
+        stringGaguejada[j + k] = string[i];
+      }
+      j += (count + 1);
+      count++;
+    } else {
+      stringGaguejada[j] = string[i];
+      j++;
+    }
+  }
+
+  stringGaguejada[j] = '\\0';
+
+  printf("%s", stringGaguejada);
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Transforma char em inteiro',
+    description:
+      'Recebe uma string e transforma cada caractere da string em int, armazenando em um vetor.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Strings/transformaCharEm%20Inteiro.h',
+    code: `
+int transformaCharEmInt(char texto[], int textoInt[]) {
+
+  int i, size = 0, size1 = 0, charc, j = 0, sizeEspaco = 0;
+
+  while (texto[size] != '\\0') {
+      if (texto[size] != ' ') {
+          size++;
+      } else {
+          size++;
+          sizeEspaco++;
+      }
+  }
+  
+  for(i = 0; i < size; i++) {
+      if (texto[i] != ' ') {
+          charc = texto[i];
+          textoInt[j] = charc;
+          j++;
+      }
+  }
+  size1 = size - sizeEspaco;
+  printf("size: %d, size1: %d, sizeEspaco: %d", size, size1, sizeEspaco);
+  return size1;
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Copia um vetor inteiro para outro vetor',
+    description:
+      'Recebe um vetor de inteiros e cria uma cópia para outro vetor.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Copia%20um%20vetor%20Inteiro%20para%20outro%20vetor.h',
+    code: `
+void copy(int vetor0[], int vetor1[], int size1) {
+  for(int i = 0; i < size1; i++) {
+      vetor0[i] = vetor1[i];
+  }
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Cria matriz de pares e ímpares',
+    description:
+      'Recebe um vetor de inteiros e cria uma matriz com os pares e ímpares.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Cria%20matriz%20de%20pares%20e%20impares.h',
+    code: `
+void vetorParImpar(int vetor[], int size) {
+
+  int size2, vetorPar[size], vetorImpar[size], j = 0, y = 0;
+
+  size2 = noReps(vetor, size);
+
+  for (int i = 0; i < size2; i++) {
+      if (vetor[i] % 2 == 0) {
+          vetorPar[j] = vetor[i];
+          j++;
+      } else {
+          vetorImpar[y] = vetor[i];
+          y++;
+      }
+  }
+  printf("\\n\\nNumero de pares (sem repeticao): %d\\n",j);
+  printf("\\nNumero de impares (sem repeticao): %d\\n",y);
+
+  printf("\\n==== Vetor de PARES ====\\n");
+  for (int i = 0; i < j; i++) {
+      printf("%d  ", vetorPar[i]);
+  }
+  printf("\\n==== Vetor de IMPARES ====\\n");
+  for (int i = 0; i < y; i++) {
+      printf("%d  ", vetorImpar[i]);
+  }
+}
+
+void matrizParImpar(int vetor[], int size) {
+
+  int size2 = 0, count = 0, j = 0, y = 0;
+  int vetorPar[size], vetorImpar[size];
+  
+  for(int i = 0; i < size; i++) {
+      if (vetor[i] == vetor[i+1]) {
+          count++;
+      } else {
+          if (vetor[i] % 2 == 0) {
+              vetorPar[j] = count;
+              j++;
+          } else {
+              vetorImpar[y] = count;
+              y++;
+          }
+          count = 0;
+      }
+  }
+  size2 = noReps(vetor, size);
+  printf("\\n\\n==== MATRIZ PAR ====\\n");
+  for (int i = 0, j = 0; i < size2; i++) {
+      if (vetor[i] % 2 == 0) {
+          printf("%d\\t%d\\n", vetor[i], vetorPar[j]+1);
+          j++;
+      }
+  }
+  printf("\\n==== MATRIZ IMPAR ====\\n");
+  for (int i = 0, y = 0; i < size2; i++) {
+      if (vetor[i] % 2 != 0) {
+          printf("%d\\t%d\\n", vetor[i], vetorImpar[y]+1);
+          y++;
+      }
+  }
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Vetor inteiros sem repetição',
+    description:
+      'Recebe um vetor de inteiros e gera um vetor sem repetições de inteiros.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Retorna%20um%20vetor%20sem%20Repetições%20de%20números.h',
+    code: `
+int noReps(int vetors[], int size) {
+
+  int i = 0, j = 0;
+  int vetorR[50];
+
+  for (i = 0; i < size; i++) {
+      if (i == 0 || vetors[i] != vetors[i-1]) {
+          vetorR[j] = vetors[i];
+          j++;
+      }
+  }
+
+  for(i = 0; i < size; i++) {
+      if (vetorR[i] != '\\0') {
+          vetors[i] = vetorR[i];
+      } else {
+          vetors[i] = '\\0';
+      }
+  }
+  return j;
+}
+        `,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Verifica se uma letra é vogal',
+    description:
+      'Recebe uma letra e verifica se ela é vogal, retornando 1 para vogal e 0 para consoante.',
+    githubLink:
+      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Novos%20Códigos/verificaVogal.h',
+    code: `
+int verificaVogal(char letra) {
+  int result = 0;
+  
+  if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+      result++;
+  }
+
+  if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+      result++;
+  }
+
+  return result;
+}
+        `,
+  },
 ]
