@@ -104,17 +104,12 @@ int somaDiv(int num) {
     githubLink:
       'https://github.com/Vttrium/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Divisores/calculaDivisorComum.h',
     code: `
-int somaDiv(int num) {
-
-    int i, soma = 0;
-    
-    for (i = 1; i <= num; i++) {
-        if (num%i == 0) {
-            soma += i;
-        }
-    }
-    
-    return soma;
+int calculaDivisorComum(int a, int b) {
+  if (b == 0) {
+      return a;
+  }
+  
+  return calculaDivisorComum(b, a % b);
 }
         `,
   },
@@ -1616,26 +1611,6 @@ int contadorDeEspacos(char Vetor[], int vetorespacos[]) {
   }
   return j;
   printf("\\n");
-}
-        `,
-  },
-  {
-    id: crypto.randomUUID(),
-    title: 'Gera um vetor de inteiros sem números repetidos',
-    description:
-      'Recebe um vetor com números repetidos, e gera um outro vetor sem as repetições do primeiro vetor.',
-    githubLink:
-      'https://github.com/oliver-zyn/UTFPR-Codes/blob/master/Códigos%20de%20Auxilio/Vetores/Retorna%20um%20vetor%20sem%20Repetições%20de%20números.h',
-    code: `
-void semRepeticao(int vetor[], int result[], int tamanho) {
-
-  int j = 0;
-  for(int i=0; i<tamanho; i++) {
-        if (i == 0 || vetor[i] != vetor[i-1]) {
-            result[j] = vetor[i];
-            j++;
-        }
-    }
 }
         `,
   },
