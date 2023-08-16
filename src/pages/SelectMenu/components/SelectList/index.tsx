@@ -1,12 +1,21 @@
 import { SelectListContainer } from "./styles";
 
-export function SelectList() {
+interface Tech {
+  icon: string
+  name: string
+  link: string
+}
+
+interface SelectListProps {
+  techs: Tech[]
+}
+
+export function SelectList({ techs }: SelectListProps) {
   return (
     <SelectListContainer>
-      <div>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-        <p>Linguagem C</p>
-      </div>
+      {
+        techs.map(tech => <div><img src={tech.icon} alt={tech.name} /> <p>{tech.name}</p></div>)
+      }
     </SelectListContainer>
   )
 }
