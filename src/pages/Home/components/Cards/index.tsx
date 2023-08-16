@@ -1,4 +1,4 @@
-import { cardData } from '../../utils/cardData'
+import { cardData } from '../../../../utils/cardData'
 import { Card } from '../Card'
 import { ContainerCards } from './styles'
 

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
-import { OpenCardHeader } from '../../components/OpenCardHeader'
+import { OpenCardHeader } from './components/OpenCardHeader'
 import { cardData } from '../../utils/cardData'
-import { OpenCardContent } from '../../components/OpenCardContent'
+import { OpenCardContent } from './components/OpenCardContent'
 
 export function OpenCard() {
   const { id } = useParams()

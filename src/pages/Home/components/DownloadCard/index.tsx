@@ -1,7 +1,7 @@
 import { ContainerDownloadCard } from './styles'
 
 import { saveAs } from 'file-saver'
-import { cardData } from '../../utils/cardData'
+import { cardData } from '../../../../utils/cardData'
 
 export function DownloadCard() {
   const handleDownloadArchiveC = () => {

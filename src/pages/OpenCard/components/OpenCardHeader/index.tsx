@@ -1,7 +1,7 @@
 import { CaretLeft, GitBranch } from 'phosphor-react'
 import { ContainerOpenCardHeader } from './styles'
 import { useNavigate } from 'react-router-dom'
-import { LinkButton } from '../LinkButton'
+import { LinkButton } from '../../../Home/components/LinkButton'
 
 type OpenCardHeaderProps = {
   title: string

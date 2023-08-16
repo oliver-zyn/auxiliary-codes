@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Cards } from '../../components/Cards'
-import { SearchBar } from '../../components/SearchBar'
-import { DownloadCard } from '../../components/DownloadCard'
+import { Cards } from './components/Cards'
+import { SearchBar } from './components/SearchBar'
+import { DownloadCard } from './components/DownloadCard'
 
 export function Home() {
   const [searchTerm, setSearchTerm] = useState('')
