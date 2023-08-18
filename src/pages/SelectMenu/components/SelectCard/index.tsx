@@ -1,12 +1,16 @@
 import { SelectCardContainer } from "./styles";
 
-export function SelectCard() {
+interface SelectCardProps {
+  name: string
+  imgUrl: string
+  path: string
+}
+
+export function SelectCard({ name, imgUrl, path }: SelectCardProps) {
   return (
-    <SelectCardContainer>
-      <div className="card__body">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
-      </div>
-      <span>Linguagem C</span>
+    <SelectCardContainer to={`/home/${path}`}>
+      <img src={imgUrl} alt={name} />
+      <span>{name}</span> 
     </SelectCardContainer>
   )
 }

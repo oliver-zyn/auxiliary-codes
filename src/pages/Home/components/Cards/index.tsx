@@ -1,12 +1,20 @@
-import { cardData } from '../../../../utils/cardData'
 import { Card } from '../Card'
 import { ContainerCards } from './styles'
 
-type CardsProps = {
-  searchTerm: string
+interface CardData {
+  id: string
+  title: string
+  description: string
+  githubLink: string
+  code: string
 }
 
-export function Cards({ searchTerm }: CardsProps) {
+type CardsProps = {
+  searchTerm: string
+  cardData: CardData[]
+}
+
+export function Cards({ searchTerm, cardData }: CardsProps) {
   const filteredCards = cardData.filter((card) =>
     card.title.toLowerCase().includes(searchTerm.toLowerCase())
   )
