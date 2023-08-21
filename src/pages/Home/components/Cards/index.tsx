@@ -12,9 +12,10 @@ interface CardData {
 type CardsProps = {
   searchTerm: string
   cardData: CardData[]
+  language: string
 }
 
-export function Cards({ searchTerm, cardData }: CardsProps) {
+export function Cards({ searchTerm, cardData, language }: CardsProps) {
   const filteredCards = cardData.filter((card) =>
     card.title.toLowerCase().includes(searchTerm.toLowerCase())
   )
@@ -27,6 +28,7 @@ export function Cards({ searchTerm, cardData }: CardsProps) {
           description={card.description}
           id={card.id}
           key={card.id}
+          language={language}
         />
       ))}
     </ContainerCards>

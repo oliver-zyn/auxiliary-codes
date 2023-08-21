@@ -6,9 +6,10 @@ type CardProps = {
   id: string
   title: string
   description: string
+  language: string
 }
 
-export function Card({ id, title, description }: CardProps) {
+export function Card({ id, title, description, language }: CardProps) {
   return (
     <ContainerCard>
       <div>
@@ -18,7 +19,7 @@ export function Card({ id, title, description }: CardProps) {
       <LinkButton
         text="ABRIR CÓDIGO"
         icon={<ArrowSquareIn size={20} />}
-        link={`/card/${id}`}
+        link={`/card/${language}/${id}`}
       />
     </ContainerCard>
   )

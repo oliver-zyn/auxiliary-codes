@@ -1,4 +1,4 @@
-export const cardData = [
+export const cardDataC = [
   {
     id: crypto.randomUUID(),
     title: 'Máximo Divisor',

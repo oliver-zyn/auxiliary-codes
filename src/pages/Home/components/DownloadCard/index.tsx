@@ -1,9 +1,20 @@
 import { ContainerDownloadCard } from './styles'
 
 import { saveAs } from 'file-saver'
-import { cardData } from '../../../../utils/cardData'
 
-export function DownloadCard() {
+interface CardData {
+  id: string
+  title: string
+  description: string
+  githubLink: string
+  code: string
+}
+
+interface DownloadCardProps {
+  cardData: CardData[]
+}
+
+export function DownloadCard({cardData}: DownloadCardProps) {
   const handleDownloadArchiveC = () => {
     let content = ''
 

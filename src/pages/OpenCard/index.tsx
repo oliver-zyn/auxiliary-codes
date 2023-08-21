@@ -1,9 +1,20 @@
 import { useParams } from 'react-router-dom'
 import { OpenCardHeader } from './components/OpenCardHeader'
-import { cardData } from '../../utils/cardData'
 import { OpenCardContent } from './components/OpenCardContent'
 
-export function OpenCard() {
+interface CardData {
+  id: string
+  title: string
+  description: string
+  githubLink: string
+  code: string
+}
+
+interface OpenCardProps {
+  cardData: CardData[]
+}
+
+export function OpenCard({cardData}: OpenCardProps) {
   const { id } = useParams()
 
   const thisCard = cardData.filter((card) => card.id == id)

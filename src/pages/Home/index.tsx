@@ -13,15 +13,16 @@ interface CardData {
 
 interface HomeProps {
   cardData: CardData[]
+  language: string
 }
 
-export function Home({ cardData  }: HomeProps) {  
+export function Home({ cardData, language }: HomeProps) {  
   const [searchTerm, setSearchTerm] = useState('')
   return (
     <>
       <SearchBar setSearchTerm={setSearchTerm} />
-      <DownloadCard />
-      <Cards searchTerm={searchTerm} cardData={cardData} />
+      <DownloadCard cardData={cardData} />
+      <Cards searchTerm={searchTerm} cardData={cardData} language={language} />
     </>
   )
 }
