@@ -16,9 +16,9 @@ export function Router() {
         <Route path="/home/c" element={<Home cardData={cardDataC} language="c" />} />
         <Route path="/home/java" element={<Home cardData={cardDataJava} language="java" />} />
         <Route path="/home/sql" element={<Home cardData={cardDataSQL} language="sql" />} />
-        <Route path="/card/c/:id" element={<OpenCard cardData={cardDataC} />} />
-        <Route path="/card/java/:id" element={<OpenCard cardData={cardDataJava} />} />
-        <Route path="/card/sql/:id" element={<OpenCard cardData={cardDataSQL} />} />
+        <Route path="/card/c/:id" element={<OpenCard language="c" />} />
+        <Route path="/card/java/:id" element={<OpenCard language="java" />} />
+        <Route path="/card/sql/:id" element={<OpenCard language="sql" />} />
       </Route>
     </Routes>
   )
