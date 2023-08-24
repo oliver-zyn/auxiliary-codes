@@ -11,14 +11,10 @@ type OpenCardHeaderProps = {
 export function OpenCardHeader({ title, githubLink }: OpenCardHeaderProps) {
   const navigate = useNavigate()
 
-  function goBack() {
-    navigate(-1)
-  }
-
   return (
     <ContainerOpenCardHeader>
       <div>
-        <button onClick={goBack}>
+        <button onClick={() => navigate(-1)}>
           <CaretLeft size={20} /> VOLTAR
         </button>
         <LinkButton
