@@ -22,7 +22,7 @@ export function Home({ cardData, language }: HomeProps) {
     <>
       <SearchBar setSearchTerm={setSearchTerm} />
       <DownloadCard cardData={cardData} />
-      <Cards searchTerm={searchTerm} language={language} />
+      <Cards searchTerm={searchTerm} cardData={cardData} language={language} />
     </>
   )
 }

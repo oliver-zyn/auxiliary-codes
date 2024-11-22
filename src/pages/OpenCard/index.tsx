@@ -1,8 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { OpenCardHeader } from './components/OpenCardHeader'
 import { OpenCardContent } from './components/OpenCardContent'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
 
 interface CardData {
   id: string
@@ -13,30 +11,23 @@ interface CardData {
 }
 
 interface OpenCardProps {
-  language: string
+  cardData: CardData[]
 }
 
-export function OpenCard({language}: OpenCardProps) {
-  const [card, setCard] = useState<CardData>({id: '', title: '', description: '', githubLink: '', code: ''})
+export function OpenCard({cardData}: OpenCardProps) {
   const { id } = useParams()
 
-  useEffect(() => {
-    axios.get(`http://localhost:5000/api/posts/open/?id=${id}&language=${language}`).then((res) => {
-      console.log(res.data);
-      setCard(res.data)
-      
-    })
-  }, [id, language])
+  const thisCard = cardData.filter((card) => card.id == id)
 
   return (
     <>
       <OpenCardHeader
-        title={card.title}
-        githubLink={card.githubLink}
+        title={thisCard[0].title}
+        githubLink={thisCard[0].githubLink}
       />
       <OpenCardContent
-        description={card.description}
-        code={card.code}
+        description={thisCard[0].description}
+        code={thisCard[0].code}
       />
     </>
   )

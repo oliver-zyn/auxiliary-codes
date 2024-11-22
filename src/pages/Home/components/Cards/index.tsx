@@ -1,7 +1,5 @@
-import { useEffect, useState } from 'react'
 import { Card } from '../Card'
 import { ContainerCards } from './styles'
-import axios from 'axios'
 
 interface CardData {
   id: string
@@ -13,21 +11,14 @@ interface CardData {
 
 type CardsProps = {
   searchTerm: string
+  cardData: CardData[]
   language: string
 }
 
-export function Cards({ searchTerm, language }: CardsProps) {
-  const [cardData, setCardData] = useState<CardData[]>([])
-
+export function Cards({ searchTerm, cardData, language }: CardsProps) {
   const filteredCards = cardData.filter((card) =>
     card.title.toLowerCase().includes(searchTerm.toLowerCase())
   )
-
-  useEffect(() => {
-    axios.get(`http://localhost:5000/api/posts/all/${language}`).then((res) => {
-      setCardData(res.data)
-    })
-  }, [language])
 
   return (
     <ContainerCards>
